@@ -12,7 +12,10 @@
     <engine name="cordova" version=">=3.0.0"/>
   </engines>
 
-  <asset src="www/softkeyboard.js" target="js/plugins/softkeyboard.js"/>
+  <!-- <asset src="www/softkeyboard.js" target="js/plugins/softkeyboard.js"/> -->
+  <js-module src="www/softkeyboard.js" name="SoftKeyboard">
+    <clobbers target="window.SoftKeyboard" />
+  </js-module>
 
   <!-- android -->
   <platform name="android">
@@ -21,7 +24,7 @@
         <param name="android-package" value="de.phonostar.softkeyboard"/>
       </feature>
     </config-file>
-    <source-file src="src/android/de/phonostar/SoftKeyboard.java" target-dir="src/de/phonostar/"/> 
+    <source-file src="src/android/de/phonostar/SoftKeyboard.java" target-dir="src/de/phonostar"/> 
   </platform>
 </plugin>
 

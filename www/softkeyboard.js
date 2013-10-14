@@ -1,34 +1,30 @@
 (function( cordova ) {
 
-  function SoftKeyBoard() {}
+  function SoftKeyboard() {}
 
-  SoftKeyBoard.prototype.show = function(win, fail) {
+  SoftKeyboard.prototype.show = function(win, fail) {
     return cordova.exec(
       function (args) { if(win !== undefined) { win(args); } },
       function (args) { if(fail !== undefined) { fail(args); } },
-      "SoftKeyBoard", "show", []);
+      "SoftKeyboard", "show", []);
   };
 
-  SoftKeyBoard.prototype.hide = function(win, fail) {
+  SoftKeyboard.prototype.hide = function(win, fail) {
     return cordova.exec(
       function (args) { if(win !== undefined) { win(args); } },
       function (args) { if(fail !== undefined) { fail(args); } },
-      "SoftKeyBoard", "hide", []);
+      "SoftKeyboard", "hide", []);
   };
 
-  SoftKeyBoard.prototype.isShowing = function(win, fail) {
+  SoftKeyboard.prototype.isShowing = function(win, fail) {
     return cordova.exec(
       function (args) { if(win !== undefined) { win(args); } },
       function (args) { if(fail !== undefined) { fail(args); } },
-      "SoftKeyBoard", "isShowing", []);
+      "SoftKeyboard", "isShowing", []);
   };
 
-  if(!window.plugins) {
-    window.plugins = {};
-  }
-
-  if (!window.plugins.SoftKeyBoard) {
-    window.plugins.SoftKeyBoard = new SoftKeyBoard();
+  if (!window.SoftKeyboard) {
+    window.SoftKeyboard = new SoftKeyboard();
   }
 
 })( window.cordova );
