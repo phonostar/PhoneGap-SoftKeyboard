@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="de.phonostar.softKeyboard"
+        version="0.1">
+
+  <name>SoftKeyboard</name>
+  <description>Android SoftKeyboard</description>
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <asset src="www/softkeyboard.js" target="js/plugins/softkeyboard.js"/>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="SoftKeyboard">
+        <param name="android-package" value="de.phonostar.softKeyboard"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/de/phonostar/SoftKeyboard.java" target-dir="src/de/phonostar/"/> 
+  </platform>
+</plugin>
+
