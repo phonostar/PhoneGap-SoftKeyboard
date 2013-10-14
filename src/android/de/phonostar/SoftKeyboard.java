@@ -1,4 +1,4 @@
-package de.phonostar.SoftKeyboard;
+package de.phonostar.softkeyboard;
 
 import org.json.JSONArray;
 
@@ -8,9 +8,9 @@ import android.view.inputmethod.InputMethodManager;
 import org.apache.cordova.api.CallbackContext;
 import org.apache.cordova.api.CordovaPlugin;
 
-public class SoftKeyBoard extends CordovaPlugin {
+public class SoftKeyboard extends CordovaPlugin {
 
-    public SoftKeyBoard() {
+    public SoftKeyboard() {
     }
 
     public void showKeyBoard() {
