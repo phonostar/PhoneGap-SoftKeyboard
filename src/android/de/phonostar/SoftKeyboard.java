@@ -43,7 +43,7 @@ public class SoftKeyboard extends CordovaPlugin {
       return true;
     }
     else if (action.equals("isShowing")) {
-      callbackContext.success(this.isKeyBoardShowing());
+      callbackContext.success(Boolean.toString(this.isKeyBoardShowing()));
       return true;
     }
     else {

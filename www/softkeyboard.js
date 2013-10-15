@@ -2,22 +2,27 @@ function SoftKeyboard() {}
 
 SoftKeyboard.prototype.show = function(win, fail) {
   return cordova.exec(
-      function (args) { if(win !== undefined) { win(args); } },
-      function (args) { if(fail !== undefined) { fail(args); } },
+      function (args) { if(win) { win(args); } },
+      function (args) { if(fail) { fail(args); } },
       "SoftKeyboard", "show", []);
 };
 
 SoftKeyboard.prototype.hide = function(win, fail) {
   return cordova.exec(
-      function (args) { if(win !== undefined) { win(args); } },
-      function (args) { if(fail !== undefined) { fail(args); } },
+      function (args) { if(win) { win(args); } },
+      function (args) { if(fail) { fail(args); } },
       "SoftKeyboard", "hide", []);
 };
 
 SoftKeyboard.prototype.isShowing = function(win, fail) {
   return cordova.exec(
-      function (args) { if(win !== undefined) { win(args); } },
-      function (args) { if(fail !== undefined) { fail(args); } },
+      function (isShowing) { 
+        if(win) { 
+          isShowing = isShowing === 'true' ? true : false
+          win(isShowing); 
+        } 
+      },
+      function (args) { if(fail) { fail(args); } },
       "SoftKeyboard", "isShowing", []);
 };
 
