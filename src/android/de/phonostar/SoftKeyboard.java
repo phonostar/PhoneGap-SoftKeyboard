@@ -5,8 +5,8 @@ import org.json.JSONArray;
 import android.content.Context;
 import android.view.inputmethod.InputMethodManager;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
 
 public class SoftKeyboard extends CordovaPlugin {
 
