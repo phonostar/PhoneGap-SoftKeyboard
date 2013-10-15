@@ -1,4 +1,4 @@
-package de.phonostar.softkeyboard;
+package de.phonostar;
 
 import org.json.JSONArray;
 
