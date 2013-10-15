@@ -23,7 +23,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="SoftKeyboard">
-        <param name="android-package" value="de.phonostar.softkeyboard"/>
+        <param name="android-package" value="de.phonostar.SoftKeyboard"/>
       </feature>
     </config-file>
     <source-file src="src/android/de/phonostar/SoftKeyboard.java" target-dir="src/de/phonostar"/> 
