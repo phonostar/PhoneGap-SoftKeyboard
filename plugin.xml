@@ -7,6 +7,8 @@
   <name>SoftKeyboard</name>
   <description>Android SoftKeyboard</description>
   <license>MIT</license>
+  <author>phonostar GmbH</author>
+
 
   <engines>
     <engine name="cordova" version=">=3.0.0"/>
@@ -14,7 +16,7 @@
 
   <!-- <asset src="www/softkeyboard.js" target="js/plugins/softkeyboard.js"/> -->
   <js-module src="www/softkeyboard.js" name="SoftKeyboard">
-    <clobbers target="window.SoftKeyboard" />
+    <clobbers target="SoftKeyboard" />
   </js-module>
 
   <!-- android -->
