@@ -31,7 +31,7 @@ public class SoftKeyboard extends CordovaPlugin {
     }
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
+    public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) {
     final SoftKeyboard _this = this;
     if (action.equals("show")) {
       cordova.getThreadPool().execute(new Runnable() {
