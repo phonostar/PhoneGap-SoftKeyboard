@@ -26,4 +26,11 @@ SoftKeyboard.prototype.isShowing = function(win, fail) {
       "SoftKeyboard", "isShowing", []);
 };
 
+SoftKeyboard.prototype.sendKey = function (keyCode, win, fail) {
+  return cordova.exec(
+      function (args) { if (win) { win(args); } },
+      function (args) { if (fail) { fail(args); } },
+      "SoftKeyboard", "sendKey", [ keyCode ]);
+};
+
 module.exports = new SoftKeyboard();
