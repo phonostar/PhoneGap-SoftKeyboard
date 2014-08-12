@@ -1,16 +1,30 @@
-PhoneGap-SoftKeyboard
-=====================
+# PhoneGap-SoftKeyboard
 
-Android SoftKeyboard Plugin for PhoneGap  
+Android SoftKeyboard Plugin for PhoneGap.
 
-Usage
------
+**NOTE:** The development of this plugin is discontinued. 
 
-- `SoftKeyboard.show()` to show the keyboard
-- `SoftKeyboard.hide()` to hide it
-- Keyboard visible callback: `SoftKeyboard.isShowing(function(){ console.log('success'); }, function(){ console.log('fail'); })`
+## Usage
 
-BTW:
+```javascript
+// Open the soft keyboard.
+SoftKeyboard.show();
+
+// Close the soft keyboard.
+SoftKeyboard.hide();
+
+// Check whether the keyboard is open or closed.
+SoftKeyboard.isShowing(function(isShowing){
+  if (isShowing) {  
+    console.log('soft keyboard open');
+  } else {
+    console.log('soft keyboard closed');
+  }
+}, function(){ 
+  console.log('error');
+})
+```
+
+**HINT:** (undocumented cordova callbacks)
 To have callback for hiding and showing the keyboard you can use:
 "showkeyboard" / "hidekeyboard" events wich are not mentioned in the docs.
-
