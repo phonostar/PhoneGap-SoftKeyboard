@@ -28,7 +28,7 @@ public class SoftKeyboard extends CordovaPlugin {
     }
 
     public boolean isKeyBoardShowing() {
-      int heightDiff = getAndroidViewByCordovaWebView().getRootView().getHeight() - getAndroidViewByCordovaWebView()).getHeight();
+      int heightDiff = getAndroidViewByCordovaWebView().getRootView().getHeight() - getAndroidViewByCordovaWebView().getHeight();
       if(100 < heightDiff){
         return heightDiff;
       } else {
