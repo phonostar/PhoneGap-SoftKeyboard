@@ -27,7 +27,11 @@ public class SoftKeyboard extends CordovaPlugin {
 
     public boolean isKeyBoardShowing() {
       int heightDiff = webView.getRootView().getHeight() - webView.getHeight();
-      return (100 < heightDiff) ? heightDiff : false; // if more than 100 pixels, its probably a keyboard...
+      if(100 < heightDiff){
+        return heightDiff;
+      } else {
+        return false;
+      }
     }
 
     @Override
