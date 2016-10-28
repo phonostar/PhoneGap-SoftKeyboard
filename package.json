@@ -1,8 +1,8 @@
 {
   "name": "phonegap-softkeyboard-android",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "android keyboard plugin returns height",
-  "main": "index.js",
+  "main": "www/softkeyboard.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,8 @@
     "url": "git+https://github.com/nicholas-b-carter/PhoneGap-SoftKeyboard.git"
   },
   "keywords": [
-    "android"
+    "ecosystem:cordova",
+    "cordova-android"
   ],
   "author": "Nicholas Carter",
   "license": "ISC",
@@ -20,7 +21,7 @@
   },
   "homepage": "https://github.com/nicholas-b-carter/PhoneGap-SoftKeyboard#readme",
   "cordova": {
-    "id": "de.phonostar.softkeyboard",
+    "id": "de.phonostar.softkeyboard.android",
     "platforms": [
       "android"
     ]

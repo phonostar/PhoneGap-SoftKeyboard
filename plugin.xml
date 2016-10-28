@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="de.phonostar.softkeyboard"
+        id="de.phonostar.softkeyboard.android"
         version="0.1.1">
 
   <name>SoftKeyboard</name>
@@ -21,10 +21,10 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="SoftKeyboard">
-        <param name="android-package" value="de.phonostar.SoftKeyboard" />
+        <param name="android-package" value="de.phonostar.SoftKeyboard.android" />
       </feature>
     </config-file>
-    <source-file src="src/android/de/phonostar/SoftKeyboard.java" target-dir="src/de/phonostar" /> 
+    <source-file src="src/android/de/phonostar/android/SoftKeyboard.java" target-dir="src/de/phonostar/android" />
   </platform>
 </plugin>
 
