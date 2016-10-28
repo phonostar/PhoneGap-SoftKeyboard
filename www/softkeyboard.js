@@ -18,7 +18,7 @@ SoftKeyboard.prototype.isShowing = function(win, fail) {
   return cordova.exec(
       function (isShowing) { 
         if(win) { 
-          isShowing = isShowing === 'true' ? true : false
+          isShowing = isShowing === 'true' ? isShowing : false
           win(isShowing); 
         } 
       },
