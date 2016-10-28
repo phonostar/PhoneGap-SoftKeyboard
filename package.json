@@ -1,6 +1,6 @@
 {
   "name": "phonegap-softkeyboard-android",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "android keyboard plugin returns height",
   "main": "www/softkeyboard.js",
   "scripts": {
